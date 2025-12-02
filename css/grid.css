@@ -1,0 +1,31 @@
+.grid-container{
+    /* border: 1px solid #000; */
+    display: grid;
+    margin-top: 90px;
+    justify-content: space-evenly;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    height: 400px;
+}
+.grid-item{
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px #000;
+    background-color: khaki;
+}
+.grid-item img{
+    border-radius: 10px;
+    width: 100%;
+}
+.grid-item button{
+    padding: 15px;
+    background-color: rgb(29, 60, 60);
+    color: white;
+    border-radius: 10px;
+}
+.grid-item button:hover{
+    padding: 15px;
+    background-color: rgb(85, 167, 167);
+   
+}
+
