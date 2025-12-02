@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables in html</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        /* border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        */
+        border: 3px groove white;
+        text-align: center;
+        font-size: 30px;
+        background-color: black;
+        color: white;
+      }
+      th {
+        text-transform: capitalize;
+        color: white;
+        width: 400px;
+      }
+      table {
+        height: 300px;
+      }
+
+      /* class selector and id selector */
+
+      /* 
+      class can be represented as (.) dot 
+      id can be represented as (#) hash
+      */
+
+      .para {
+        font-size: 20px;
+        color: blue;
+        border: 1px solid black;
+      }
+      #id_para2 {
+        font-size: 25px;
+        color: red;
+        border: 2px solid black;
+      }
+      #id_para1 {
+        font-size: 30px;
+        color: aqua;
+        border: 3px dashed black;
+      }
+      .one {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <center>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>job title</th>
+            <th>email</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Ebad uddin</td>
+            <td>Web developer</td>
+            <td>ebad@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Sami</td>
+            <td>designer</td>
+            <td>sami@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Saeed</td>
+            <td>business man</td>
+            <td>saeed@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </center> -->
+
+    <!-- block level element
+    we can use dive for mulitple purpose like making container, sections  
+    -->
+
+    <div style="background-color: aqua">division</div>
+
+    <p class="para one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      expedita nesciunt perferendis est, veniam esse?
+    </p>
+    <p id="id_para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      expedita nesciunt perferendis est, veniam esse?
+    </p>
+    <p id="id_para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      expedita nesciunt perferendis est, veniam esse?
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      expedita nesciunt perferendis est, veniam esse?
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      expedita nesciunt perferendis est, veniam esse?
+    </p>
+  </body>
+</html>

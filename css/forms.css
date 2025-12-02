@@ -1,0 +1,29 @@
+/* margin(outer space) in css */
+
+* {
+  margin: 0;
+}
+form {
+  /* margin-top: 100px;
+    margin-left: 655px; */
+  /* margin: 50px 100px 50px 100px;  order(T R B L) property for margin and padding both*/
+  margin: 100px auto;
+  border: 1px solid black;
+  width: 200px;
+  padding: 87px;
+  background-color: cadetblue;
+}
+input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+input:focus {
+  background-color: lightgreen;
+}
+
+.checkbox_button{
+margin: 20px;
+}
