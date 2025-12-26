@@ -185,14 +185,68 @@ if(condition){
     a. if percentage in between 50-59 (Grade-D)
 */
 
-let number1 = parseInt(prompt('number1'))
-let number2 = parseInt(prompt('number2'))
+// let number1 = parseInt(prompt('number1'))
+// let number2 = parseInt(prompt('number2'))
 
-document.write(number1 + number2)
-
-
+// document.write(number1 + number2)
 
 
+// do-while
+let i = 0;
+do{
+    document.write(i  + " Hello world <br>");
+    i++;
+}while(i < 10)
+
+
+// functions (a block of code that can be reused);
+
+// without parameters
+
+// function fullName(){
+//     document.write("Ebad uddin ahmed");
+//     document.write("45");
+// }
+// fullName();
+// document.write('<br>')
+// fullName();
+// document.write('<br>')
+// fullName();
+// document.write('<br>')
+// document.write('break')
+// document.write('<br>')
+// fullName();
+// document.write('<br>')
+// fullName();
+
+
+
+// function addition(){
+//     let a = 9;
+//     let b = 7;
+//     let result = a + b;
+//     document.write(result)
+// }
+
+// document.write('<br>')
+// addition()
+
+
+// function with parameters 
+
+function add(a , b){
+    let result = a + b;
+    document.write(result)
+}
+
+
+
+function getFullName(firstName, lastName){
+    alert(`your FullName is ${firstName} ${lastName}`)
+}
+// getFullName(prompt("Enter first name"), prompt("Enter  last name")) 
+
+// confirm("are you sure you want to exit the screen?")
 
 
 
