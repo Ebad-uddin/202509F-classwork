@@ -8,8 +8,17 @@
 <body>
 <h1>Javascript class</h1>
 
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, praesentium!</p>
 
-
+<button id="btn">style</button>
+<button id="remove">remove</button>
+<button id="refresh_btn">refresh</button>
 
 <script>
 
@@ -249,7 +258,6 @@ function getFullName(firstName, lastName){
 
 // array
 
-let fruits = ["apple", "mango", "orange", "banana", "grapes"];
 
 // console.log(fruits[0]);
 // console.log(fruits[1]);
@@ -268,36 +276,36 @@ let fruits = ["apple", "mango", "orange", "banana", "grapes"];
 // document.write("<br>")
 
 // for(let i = 0; i < 5; i++){
-//     document.write(fruits[i])
-//     document.write("<br>")
-// }
-
-// // counting starts with 10 and ends on zero
-
-// for(let i = 10; i >= 0; i--){
-//     document.write(i)
-//     document.write("<br>")
-// }
-
-// let colors = new Array()
-// colors[0] = "red"
-// colors[1] = "blue"
-// colors[2] = "green"
-
-
-// for(let i = 0; i < 3; i++){
-//     document.write(colors[i])
-//     document.write("<br>")
-// }
-
-// multi dimensional array
-
-let marks = [
-    [23, 66, 98], // 0
-    [32, 64, 87], // 1
-    [99, 46, 67]  // 2
-]
-
+    //     document.write(fruits[i])
+    //     document.write("<br>")
+    // }
+    
+    // // counting starts with 10 and ends on zero
+    
+    // for(let i = 10; i >= 0; i--){
+        //     document.write(i)
+        //     document.write("<br>")
+        // }
+        
+        // let colors = new Array()
+        // colors[0] = "red"
+        // colors[1] = "blue"
+        // colors[2] = "green"
+        
+        
+        // for(let i = 0; i < 3; i++){
+            //     document.write(colors[i])
+            //     document.write("<br>")
+            // }
+            
+            // multi dimensional array
+            
+            let marks = [
+                [23, 66, 98], // 0
+                [32, 64, 87], // 1
+                [99, 46, 67]  // 2
+            ]
+            
 // document.write(marks[0][1])
 // document.write(marks[0][2])
 
@@ -306,10 +314,112 @@ for(let j = 0; j < marks.length; j++){  // outer loop
     for(let k = 0; k < marks[j].length; k++){   // inner loop
         document.write(marks[j][k]+ ' ')
     }    
-        document.write("<br>")
+    document.write("<br>");
+}
 
+
+let fruits = ["apple", "mango", "orange", "banana", "grapes", "watermelon"];
+
+fruits.forEach(function(element){
+    document.write(element + ' ');
+})
+
+// objects
+let person = {
+    name : "ebad",
+    height : "5'10",
+    age : "100",
+    education : "masters"
+}
+
+// console.log(person)
+// document.write(person.name)
+
+for(i in person){
+
+    document.write(`<br>${i} : ${person[i]}<br>`)
 
 }
+
+
+// DOM (document object model)
+// used to manipulate data in html document with the help of js
+
+
+
+
+
+
+// document.getElementById();
+// document.getElementsByClassName();
+// document.getElementsByTagName();
+// document.querySelector();
+// document.querySelectorAll();
+
+
+let para = document.getElementsByTagName('p');
+console.log(para);
+
+
+// events
+let btn = document.getElementById('btn')
+let refresh_btn = document.getElementById('refresh_btn')
+let remove = document.getElementById('remove')
+
+btn.addEventListener('click', function(){
+for(let i = 0; i < para.length; i++){
+    console.log(para[i])
+    para[i].innerText = "para-3"
+    para[i].innerHTML = "<ul><li>item-1</li></ul>"
+    para[i].style.backgroundColor = "red"
+    para[i].style.color = "white"
+    para[i].style.padding = "20px"
+}
+})
+
+// btn.addEventListener('click', function(){
+// para[3].innerText = "para-3"
+// para[3].innerHTML = "<ul><li>item-1</li></ul>"
+// para[3].style.backgroundColor = "red"
+// para[3].style.color = "white"
+// para[3].style.padding = "20px"
+// })
+
+// // on single click
+// refresh_btn.addEventListener('click', function(){
+//     window.location.reload();
+// })
+// // on dblsingle click
+refresh_btn.addEventListener('dblclick', function(){
+    window.location.reload();
+})
+// // on mouseover
+// refresh_btn.addEventListener('mouseover', function(){
+// window.location.reload();
+// })
+// remove.addEventListener('click', function(){
+// para[3].style.backgroundColor = ""
+// para[3].style.color = ""
+// para[3].style.padding = ""
+// })
+function generateRandomSixDigitInt() {
+  // Min value is 100000, Max value is 999999
+  const min = 100000;
+  const max = 999999;
+  // Math.random() is inclusive of 0 but exclusive of 1, so the result is always in range
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let randnum = generateRandomSixDigitInt()
+
+setInterval(() => {
+    let randnum = generateRandomSixDigitInt() + 1
+    console.log(randnum)
+   document.body.style.backgroundColor = `#${randnum}` 
+}, 500);
+
+
+
+
 
 
 
