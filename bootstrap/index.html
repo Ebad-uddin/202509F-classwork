@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="congrats" class="alert alert-primary w-75 d-none">
+        <span>Congrats!</span>
+    </div>
+    <button id="btn" class="btn btn-primary btn-sm">click me</button>
+    <button id="remove_btn" class="btn btn-danger btn-lg">remove</button>
+    <a href="" class="btn btn-outline-warning">link</a>
+    <input type="submit" class="btn btn-secondary" value="Save">
+
+    <script>
+        let congrats = document.getElementById('congrats')
+        let btn = document.getElementById('btn')
+        let remove_btn = document.getElementById('remove_btn')
+        btn.addEventListener('click', function(){
+            congrats.classList.remove("d-none")
+        })
+        remove_btn.addEventListener('click', function(){
+            congrats.classList.add("d-none")
+        })
+    </script>
+    <!-- <div class="alert alert-danger">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div>
+    <div class="alert alert-warning">
+        <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div>
+    <div class="alert alert-secondary">
+        <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div>
+    <div class="alert alert-success">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div>
+    <div class="alert alert-dark">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div>
+    <div class="alert alert-light">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div>
+    <div class="alert alert-info">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, earum.</p>
+    </div> -->
+
+
+
+
+</body>
+</html>
